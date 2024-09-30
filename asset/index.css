@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#flags {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.flag {
+  width: 100%;
+  height: 200px;
+}
+
+.flag-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+.three-horizontal-stripes {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.three-vertical-stripes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.two-horizontal-stripes {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.flag-with-crosses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 20px;
+}
+
+.vertical-line {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  left: 120px;
+}
+
+@media screen and (min-width: 650px) {
+  #flags {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #flags {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #flags {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
